@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slogan Technologies LLC - Comprehensive Proposal to the Creative Economy Development Fund (CEDF)</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f8f9fa; 
+            color: #343a40; 
+        }
+        .container { 
+            width: 85%; 
+            margin: 20px auto; 
+            overflow: hidden; 
+            padding: 25px; 
+            background-color: #ffffff; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header.main-header { 
+            background: #343a40; /* Changed to match footer */
+            color: #fff; 
+            padding: 2rem 1rem; 
+            text-align: center; 
+            border-bottom: #ffc107 /* Amber/Gold */ 5px solid;
+            margin-bottom: 0; 
+        }
+        header.main-header .logo-container { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-wrap: wrap;
+            gap: 20px; 
+            margin-bottom: 15px; 
+        }
+        header.main-header .logo-graphic { 
+            width: 90px; 
+            height: 90px; 
+            background-color: #ffc107; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-weight: bold; 
+            font-size: 1.8em; 
+            color: #004085; 
+            border: 3px solid #fff;
+        }
+        header.main-header h1 { 
+            margin:0; 
+            font-size: 2.8em; 
+            font-weight: 700;
+        }
+        header.main-header .project-title-main { 
+            font-size: 1.5em; 
+            font-style: italic;
+            color: #e9ecef;
+            margin-top: 5px;
+        }
+
+        nav#navbar {
+            background-color: #2c3e50; 
+            color: #ecf0f1; 
+            padding: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+        }
+        nav#navbar ul {
+            list-style: none;
+            margin: 0 auto; 
+            padding: 0;
+            display: flex;
+            justify-content: center; 
+            max-width: 1200px; 
+        }
+        nav#navbar > ul > li {
+            position: relative; 
+            display: inline-block; 
+        }
+        nav#navbar ul li a {
+            display: block;
+            padding: 18px 22px; 
+            text-decoration: none;
+            color: #ecf0f1; 
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav#navbar > ul > li > a:hover,
+        nav#navbar > ul > li > a.active {
+            background-color: #ffc107; 
+            color: #004085; 
+        }
+        nav#navbar > ul > li > a.active {
+             font-weight: 700;
+        }
+
+        nav#navbar ul ul { 
+            display: none;
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            background-color: #34495e; 
+            min-width: 240px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 0 0 4px 4px; 
+            z-index: 1001; 
+            padding: 0; 
+        }
+        nav#navbar ul li:hover > ul {
+            display: block; 
+        }
+        nav#navbar ul ul li {
+            display: block; 
+            width: 100%;
+        }
+        nav#navbar ul ul li a {
+            padding: 12px 20px;
+            color: #ecf0f1; 
+            border-bottom: 1px solid #2c3e50; 
+        }
+        nav#navbar ul ul li:last-child a {
+            border-bottom: none; 
+        }
+        nav#navbar ul ul li a:hover {
+            background-color: #ffc107; 
+            color: #004085; 
+        }
+        nav#navbar > ul > li.has-dropdown > a::after {
+            content: ' ▼'; 
+            font-size: 0.7em;
+            margin-left: 6px;
+        }
+
+        section { 
+            padding: 25px; 
+            margin-bottom: 25px; 
+            background: #fff; 
+            border-radius: 6px;
+            border: 1px solid #e9ecef; 
+            scroll-margin-top: 70px; 
+        }
+        section h2 { 
+            color: #004085; 
+            border-bottom: 3px solid #ffc107; 
+            padding-bottom: 12px; 
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        section h3 { 
+            color: #0056b3; 
+            margin-top: 25px; 
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        section h4 {
+            color: #17a2b8; /* Teal */
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .highlight-box { 
+            background-color: #e6f7ff; 
+            border-left: 6px solid #007bff; 
+            padding: 20px; 
+            margin: 25px 0; 
+            border-radius: 5px;
+        }
+        .ai-focus, .xr-focus { 
+            border-left: 5px solid #fd7e14; 
+            padding: 15px; 
+            background-color: #fff9e6; 
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .xr-focus {
+             border-left-color: #28a745; /* Green for XR */
+             background-color: #e6ffed; /* Light green */
+        }
+        .executive-summary strong, .core-objectives strong { 
+            color: #004085; 
+        }
+        table.funding-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+        }
+        table.funding-table th, table.funding-table td { 
+            border: 1px solid #dee2e6; 
+            padding: 12px 15px; 
+            text-align: left; 
+        }
+        table.funding-table th { 
+            background-color: #e9ecef; 
+            color: #212529; 
+            font-weight: 600;
+        }
+        table.funding-table tr:nth-child(even) {
+            background-color: #f8f9fa; 
+        }
+        .revenue-stream, .impact-area, .service-item, .risk-mitigation-item, .monetization-item, .partnership-item { 
+            margin-bottom: 18px; 
+            padding: 15px; 
+            background-color: #f8f9fa; 
+            border-radius: 5px; 
+            border-left: 4px solid #17a2b8; 
+        }
+        .product-suite-item { 
+            background: #e6f7ff; 
+            padding: 12px; 
+            margin-bottom: 12px; 
+            border-left: 4px solid #007bff; 
+            border-radius: 4px;
+        }
+        .video-placeholder { 
+            background: #e9ecef; 
+            padding: 25px; 
+            text-align: center; 
+            margin: 25px 0; 
+            border: 2px dashed #6c757d; 
+            border-radius: 5px;
+        }
+        .video-placeholder p { 
+            margin: 5px 0; 
+            font-style: italic; 
+            color: #495057; 
+        }
+        .video-placeholder a, .gallery-link a {
+            color: #0056b3;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .video-placeholder a:hover, .gallery-link a:hover {
+            text-decoration: underline;
+        }
+        .screenshot-placeholder {
+            display: inline-block;
+            width: 150px; height: 100px; /* Adjust as needed */
+            background-color: #adb5bd;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .appendix { 
+            margin-top: 35px; 
+            padding-top: 25px; 
+            border-top: 3px dashed #adb5bd; 
+        }
+        .appendix h2 { 
+            color: #495057; 
+        }
+        .contact-info { text-align: center; margin-bottom: 20px; }
+        .contact-info p { margin: 8px 0; font-size: 1.1em; }
+        .contact-info a { color: #e9ecef; text-decoration: none; font-weight: 500; } /* Adjusted for darker header */
+        .contact-info a:hover { text-decoration: underline; }
+        footer.main-footer { 
+            text-align: center; 
+            padding: 25px; 
+            background: #343a40; 
+            color: #f8f9fa; 
+            margin-top: 30px; 
+        }
+        .signatures { 
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap;
+            margin-top: 30px; 
+            padding: 25px 0; 
+            border-top: 1px solid #dee2e6; 
+        }
+        .signature-block { 
+            text-align: center; 
+            min-width: 200px;
+            margin: 10px;
+        }
+        .signature-block p { margin: 5px 0; }
+        .emphasize { 
+            font-weight: bold; 
+            color: #0056b3; 
+        }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+
+        html {
+            scroll-padding-top: 70px; 
+        }
+
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <div class="logo-graphic"><img src="https://lh5.googleusercontent.com/2IHfGHXS60vsyQ5nsiVedkXWVs1ZOfmQg8mKdgOd_XLzfRCzzMn3wFDJ4JTKRu3RxqNXaxAvk3bmF1wYFXOwlwg=w16383" width="100px"/></div>
+            <div>
+                
+                <p class="project-title-main">Project Title: Building the Future of African Creativity through AI, Game Development & Robotics</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>Submitted by: Slogan Technologies LLC</p>
+            <p>4351, Whiteplains road, Bronx, NY, 10466, USA</p>
+            <p>Tel: +1 914-310-9962, +2347065768073</p>
+            <p>Email: <a href="mailto:Laiakabash@hotmail.com">Laiakabash@hotmail.com</a>, <a href="mailto:aondoverslogantechllc@outlook.com">aondoverslogantechllc@outlook.com</a></p>
+            <p>Website: <a href="https://bit.ly/slogantechnologies" target="_blank" rel="noopener noreferrer">https://bit.ly/slogantechnologies</a></p>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li class="has-dropdown">
+                <a href="#executive-summary">The Project</a>
+                <ul>
+                    <li><a href="#executive-summary">Executive Summary</a></li>
+                    <li><a href="#adk-showcase">ADK Showcase</a></li>
+                    <li><a href="#objectives">Objectives & Scope</a></li>
+                    <li><a href="#impact">Impact Areas</a></li>
+                </ul>
+            </li>
+            <li><a href="#services">Our Services</a></li>
+            <li class="has-dropdown">
+                <a href="#funding">Business & Financials</a>
+                <ul>
+                    <li><a href="#funding">Funding Requirements</a></li>
+                    <li><a href="#revenue">Revenue & Business Model</a></li>
+                    <li><a href="#partnerships">Partnerships Strategy</a></li>
+                    <li><a href="#appendix">Financial Appendix</a></li>
+                </ul>
+            </li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="overview">
+            <h2>Company Overview</h2>
+            <p>Slogan Technologies LLC is a dual-registered innovative technology company based in the US and Nigeria, focused on the strategic convergence of <span class="emphasize">Creative Technology and Artificial Intelligence</span>. Our leadership possesses over 7+ years of deep industry experience in AI, Game Development, Robotics, Computer Vision, Cybersecurity, and scalable software development.</p>
+            <p>We architect and deploy intelligent systems for sectors including:</p>
+            <ul>
+                <li>Gaming & Creative Media (with AI-driven content generation and personalization)</li>
+                <li>Education Technology (AI-enhanced learning platforms and robotics kits)</li>
+                <li>Agricultural & Healthcare AI (leveraging CV and ML for diagnostics and optimization)</li>
+                <li>Engineering, Robotics & Automation (developing autonomous systems and control logic)</li>
+                <li>Cultural Content Distribution (utilizing AI for indexing, recommendation, and preservation)</li>
+            </ul>
+            <p>Our flagship product, <span class="emphasize">African Deity Kombat</span>, showcases our commitment to preserving African heritage through modern technology. We are building a comprehensive tech ecosystem that values intellectual property, leverages robust AI/ML backend services for problem-solving, and creates inclusive opportunities for creatives globally.</p>
+        </section>
+
+        <section id="executive-summary" class="highlight-box">
+            <h2>Executive Summary</h2>
+            <p>Slogan Technologies LLC is applying for $350,000 under <strong>Phase 1 of the Creative Economy Development Fund (CEDF)</strong> to scale up a bold and innovative project in <strong>3D Game Development, Artificial Intelligence (AI), Machine Learning (ML), Computer Vision (CV), and Robotics</strong>. This initiative targets the entertainment, education, and creative technology sectors, with a mission to establish Nigeria as a powerhouse for AI-driven creative technologies and a hub for the development of culturally relevant, globally competitive 3D games and intelligent systems, supported by a scalable backend infrastructure.</p>
+            <p>We propose to develop and deploy a suite of interconnected products, all leveraging a common AI/ML backend platform for enhanced capabilities:</p>
+            <div class="product-suite-item"><strong>African Deity Kombat:</strong> A revolutionary AI-powered 3D game rooted in African mythology, featuring dynamic NPCs, procedural content generation, and adaptive narratives.</div>
+            <div class="product-suite-item"><strong>AI & Robotics Kits:</strong> Educational kits for schools and organizations, designed to foster STEM skills with hands-on AI and robotics projects, complete with cloud-connected learning modules.</div>
+            <div class="product-suite-item"><strong>AI/ML Microservices & APIs:</strong> Scalable backend services for facial recognition, natural language processing (with a focus on African languages), and autonomous systems, accessible via robust APIs.</div>
+            <div class="product-suite-item"><strong>Virtual Production Studios:</strong> Utilizing XR/VR for immersive storytelling and content creation, supported by real-time rendering pipelines and asset management systems.</div>
+            <p>With this funding, Slogan Technologies will create over 80 direct jobs, train 200 creatives, support 5+ SMEs, and generate high-value intellectual property that positions Nigeria competitively in the global creative economy. Our approach emphasizes building robust, maintainable, and scalable backend systems to power these innovative frontend experiences.</p>
+        </section>
+
+        <section id="adk-showcase" class="highlight-box">
+            <h2>African Deity Kombat (ADK): Visualizing AI/XR Gaming Potential</h2>
+            
+            <h3>Overview</h3>
+            <p>African Deity Kombat (ADK) is a revolutionary AI-powered 3D fighting game inspired by the rich mythology of African deities, particularly Yoruba gods. The game integrates cutting-edge Artificial Intelligence (AI), Machine Learning (ML), and Robotics-inspired Physics to create an immersive and interactive gaming experience. Developed using C# and Unity Engine, ADK features both single-player and multiplayer modes with Bluetooth, LAN, and Online Network connectivity. The game is designed to educate, entertain, and showcase African folklore through a digital and interactive medium.</p>
+        
+            <h3>Key Features & Technological Depth</h3>
+            
+            <h4>🎮 Advanced AI & ML Mechanics</h4>
+            <ul>
+                <li>AI-powered NPCs that learn and adapt to player strategies, offering unique challenges each playthrough.</li>
+                <li>Machine Learning models built with TensorFlow and PyTorch to train game AI agents for complex behaviors and decision-making.</li>
+                <li>NPCs evolve their tactics and abilities over time based on in-game events, player interactions, and collective gameplay data.</li>
+            </ul>
+        
+            <h4>🏆 Realistic Physics & Robotics-Based Animation</h4>
+            <ul>
+                <li>Integration of physical quantities like force, acceleration, impulse, friction, and moment to enhance character movements, impacts, and environmental interactions.</li>
+                <li>Sensory algorithms enabling NPCs to react realistically to visual, auditory, and tactile stimuli within the game world.</li>
+                <li>AI-driven character movements and procedural animation systems ensure smooth, dynamic, and believable gameplay.</li>
+            </ul>
+        
+            <h4>🌍 Cultural Representation & Storytelling</h4>
+            <ul>
+                <li>Deeply rooted in Yoruba mythology, featuring a roster of African deities as playable characters with authentic powers and lore.</li>
+                <li>Rich, narrative-driven single-player campaigns and lore integration, with ethical AI implementation to preserve and respectfully showcase African heritage.</li>
+            </ul>
+        
+            <h4>👾 Multiplayer Functionality</h4>
+            <ul>
+                <li>Robust multiplayer support across Bluetooth (local), LAN, and Online Networks for diverse competitive and cooperative experiences.</li>
+                <li>Optimized netcode for seamless multiplayer experience with minimal latency.</li>
+                <li>Balanced AI characters for engaging PvP (Player vs. Player) and PvE (Player vs. Environment/AI) battles.</li>
+            </ul>
+        
+            <h4>🎨 3D Character Design & Automation</h4>
+            <ul>
+                <li>Creation of diverse and visually stunning African deity-inspired characters using Character Creator and Unity Engine.</li>
+                <li>AI-assisted and automated 3D character generation pipelines for producing realistic and culturally authentic avatars efficiently.</li>
+                <li>Enhanced graphics optimized for various device performance levels, ensuring accessibility without compromising visual fidelity.</li>
+            </ul>
+        
+            <h3>Visualizing the AI/XR Experience</h3>
+            <div class="ai-focus">
+                <p><strong>The AI-Driven Revolution in Gameplay:</strong> ADK leverages AI not just for challenging opponents, but to create a truly dynamic and evolving world. Imagine:</p>
+                <ul>
+                    <li>NPCs who strategically counter your signature moves after learning them in previous encounters.</li>
+                    <li>Game narratives and world events that subtly shift based on collective player actions and preferences, analyzed by sophisticated backend ML models.</li>
+                    <li>Physics-based combat where AI-controlled characters utilize the environment, chain complex combos, and exhibit emergent behaviors with human-like ingenuity and strategic depth.</li>
+                </ul>
+            </div>
+            <div class="xr-focus">
+                <p><strong>Immersive XR Integration - Stepping into Mythology:</strong></p>
+                <ul>
+                    <li><strong>Virtual Reality (VR):</strong> Experience the awesome might of African deities firsthand. Engage in visceral first-person combat, feeling the impact of divine powers and wielding sacred weapons. Explore meticulously recreated mythological realms like the spiritual Orun or ancient Ile-Ife in stunning, fully immersive virtual reality.</li>
+                    <li><strong>Augmented Reality (AR):</strong> Bring the deities and mythical battles into your world. Visualize characters like Shango, the god of thunder, or Oya, the warrior goddess of winds, manifesting and battling in your living room or local park. Use AR for interactive educational modules where players can learn about the history, symbols, and significance of each deity through engaging, location-aware experiences.</li>
+                </ul>
+            </div>
+        
+            <h3>Technical Implementation</h3>
+            <h4>🔥 Technologies Used</h4>
+            <ul>
+                <li><strong>Game Engine:</strong> Unity (C#)</li>
+                <li><strong>AI & ML:</strong> TensorFlow, PyTorch, Unity ML-Agents</li>
+                <li><strong>Physics Simulation:</strong> Robotics-based physical principles, Unity Physics Engine</li>
+                <li><strong>Networking:</strong> Bluetooth, LAN (UNET/Mirror), Online Multiplayer (Photon/Custom Backend)</li>
+                <li><strong>Graphics & Animation:</strong> Unity Animation System, Shader Graph, 3D Character Creator, Substance Painter</li>
+            </ul>
+        
+            <h4>⚙ Challenges & Solutions</h4>
+            <table class="funding-table" style="margin-top: 10px; font-size: 0.9em;">
+                <thead><tr><th>Challenge</th><th>Solution</th></tr></thead>
+                <tbody>
+                    <tr><td>Debugging complex AI models & emergent behaviors</td><td>Continuous iterative testing, modular AI design, and tuning of ML models with extensive simulation and player feedback.</td></tr>
+                    <tr><td>Graphics compatibility & performance for culturally rich, detailed characters</td><td>Development of scalable assets (LODs), optimized shaders, and adaptive quality settings for diverse GPU capabilities.</td></tr>
+                    <tr><td>Multiplayer latency and synchronization issues</td><td>Advanced network optimization techniques, client-side prediction, server reconciliation, and robust backend infrastructure for low-latency interaction.</td></tr>
+                    <tr><td>Cross-platform performance optimization & consistency</td><td>Dynamic asset loading, platform-specific builds, performance profiling, and scalable graphic settings.</td></tr>
+                    <tr><td>Ethical AI integration and cultural sensitivity</td><td>Collaboration with cultural experts, community feedback loops, and ensuring fair, unbiased AI decision-making and representation.</td></tr>
+                </tbody>
+            </table>
+        
+            <h3>Future Roadmap</h3>
+            <ul>
+                <li>🚀 Expand AI complexity for hyper-adaptive NPCs and dynamic, AI-generated questlines.</li>
+                <li>🌎 Add more African mythologies (e.g., Zulu, Egyptian, Akan) and deities to diversify content and expand the game universe.</li>
+                <li>🎭 Enhance storytelling with branching narratives, player agency affecting world state, and deeper lore integration through AI-driven interactions.</li>
+                <li>📡 Optimize cross-platform performance for seamless gameplay on PC, consoles, and mobile devices.</li>
+                <li>🎮 Global market launch across multiple gaming platforms (Steam, PlayStation Store, Xbox Store, App Store, Google Play).</li>
+                <li>🔥 VR & AR Integration for a more immersive gaming experience (as elaborated in "Visualizing the AI/XR Experience").</li>
+                <li>💡 Community Involvement: Introduce modding support, user-generated content tools, and AI-assisted level design features.</li>
+            </ul>
+        
+            <h3>Visual Previews</h3>
+            <h4>Screenshots</h4>
+            <div style="text-align: center; margin-bottom: 15px;">
+                <div class="screenshot-placeholder"><img src="https://drive.google.com/file/d/1t1aE7Tw7QIyrVH_BDPx8vxmpqdQJy5pQ/view?usp=sharing"/>ADK Shot 1</div>
+                <div class="screenshot-placeholder">ADK Shot 2</div>
+                <div class="screenshot-placeholder">ADK Shot 3</div>
+            </div>
+            <p class="gallery-link" style="text-align: center;"><em>More images can be found in our <a href="#" target="_blank" rel="noopener noreferrer">Gallery</a>.</em></p>
+        
+            <h4>Gameplay Video Preview</h4>
+            <div class="video-placeholder">
+                <p><strong>ADK Gameplay Trailer/Concept Video</strong></p>
+                <p>🎥 <a href="https://drive.google.com/file/d/1V9i5Mrgsk5ieH5xWRH_Ge7bndA6ctib5/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Watch the Gameplay Video</a></p>
+                <p>This preview will demonstrate the fluid combat, AI-driven character interactions, robotics-inspired physics, and the rich visual tapestry inspired by African mythology.</p>
+            </div>
+        </section>
+
+        <section id="objectives">
+            <h2>Project Scope and Objectives</h2>
+            <h3>Project Title: Creative Africa: AI, Games & Robotics for Culture, Innovation & Youth Empowerment</h3>
+            <h3>Core Objectives:</h3>
+            <ul class="core-objectives">
+                <li>Develop and launch a <strong>commercial-grade 3D game</strong> based on African folklore with AI-driven non-playable characters (NPCs), available on Android, iOS, PC, and PlayStation, supported by a cross-platform game backend.</li>
+                <li>Create Nigeria's first <strong>AI-Powered Creative Studio</strong>, providing accessible XR/VR facilities and digital production tools for creators, integrated with cloud-based AI services.</li>
+                <li>Build an <strong>AI/ML platform</strong> for cultural content indexing, voice cloning, CV algorithms, and real-time 3D animation systems, offering these as backend-as-a-service (BaaS) components.</li>
+                <li>Deploy <strong>AI Robotics Kits</strong> across schools and organizations to inspire young inventors and build STEM capacity, with online platforms for code sharing and remote robot control.</li>
+                <li>Train and incubate <strong>200 youth and creatives</strong> in AI Game Dev, XR Design, Robotics and Mechatronics, fostering a skilled workforce for our ecosystem.</li>
+                <li>Leverage <strong>IP rights</strong> to drive revenue and secure licensing for characters, stories, and software, managed through a digital rights management (DRM) backend system.</li>
+            </ul>
+            <h3>Target Audience:</h3>
+            <ul>
+                <li>Game enthusiasts & cultural consumers</li>
+                <li>XR/VR artists and creative tech startups</li>
+                <li>Educational institutions (K-12 and Higher Education)</li>
+                <li>African diasporic communities seeking cultural engagement</li>
+                <li>Digital streaming platforms and content aggregators</li>
+            </ul>
+            <h3>Mission and Vision:</h3>
+            <p><strong>Mission Statement:</strong> Our mission is to push the boundaries of Game, AI and Robotics, bringing Africa to the forefront of technological advancements. We aim to create a sustainable and inclusive technological ecosystem that fosters economic growth, improves quality of life, and enhances the competitiveness of African businesses on the global stage through robust and scalable AI-driven backend solutions.</p>
+            <p><strong>Vision Statement:</strong> To be the premier Game, AI and Robotics development firm in Africa, recognized for our cutting-edge technology, innovative solutions, and commitment to empowering communities through technology built on a foundation of intelligent backend systems.</p>
+            <h3>Core Values:</h3>
+            <ul>
+                <li><strong>Innovation:</strong> Embracing new ideas and technologies to drive progress.</li>
+                <li><strong>Excellence:</strong> Striving for the highest standards in all our endeavors.</li>
+                <li><strong>Community:</strong> Engaging with local communities to understand their needs and provide tailored solutions.</li>
+                <li><strong>Sustainability:</strong> Promoting environmentally friendly and socially responsible practices.</li>
+                <li><strong>Collaboration:</strong> Building strong partnerships with other organizations to achieve common goals.</li>
+            </ul>
+        </section>
+
+        <section id="services">
+            <h2>Services Offered</h2>
+            <p>Our services are built upon a modular and scalable backend architecture, enabling rapid deployment and customization for diverse client needs.</p>
+            <div class="service-item"><strong>Artificial Intelligence (AI):</strong> Developing and deploying AI-driven solutions for various industries, including healthcare (AI diagnostics), finance (fraud detection), and retail (personalization engines). This includes custom model training, fine-tuning, and MLOps.</div>
+            <div class="service-item"><strong>Machine Learning (ML):</strong> Implementing ML algorithms and pipelines to improve data analysis, predictive modeling, and decision-making processes, offered as managed ML services.</div>
+            <div class="service-item"><strong>Computer Vision (CV):</strong> Creating CV systems for applications such as facial recognition, object detection, autonomous vehicle perception, and agricultural monitoring, deployable on edge devices or via cloud APIs.</div>
+            <div class="service-item"><strong>Software Development:</strong> Providing custom software solutions, from enterprise applications to mobile apps, focusing on secure, scalable, and maintainable codebases with robust backend integration.</div>
+            <div class="service-item"><strong>Web Development:</strong> Designing and building robust, user-friendly websites and complex web applications with dynamic content delivery and API-driven functionalities.</div>
+            <div class="service-item"><strong>Cybersecurity:</strong> Protecting digital assets from cyber threats through advanced security measures, secure coding practices, and AI-driven threat detection systems.</div>
+            <div class="service-item"><strong>Game Development:</strong> Building immersive 2D and 3D games using advanced game engines, AI mechanics, and interactive storytelling for education, entertainment, and simulations, with backend support for multiplayer, leaderboards, and analytics.</div>
+            <div class="service-item"><strong>Robotics Development:</strong> Designing and programming intelligent robotic systems for automation, industrial applications (ROS/ROS 2), and smart environments using AI, ML, and advanced control systems, including HIL simulation.</div>
+            <div class="service-item"><strong>Technology Education:</strong> Offering training programs and workshops (online and offline) to equip individuals with skills in AI, ML, CV, Robotics, and Game Development, leveraging our internal platforms and expertise.</div>
+        </section>
+
+        <section id="funding">
+            <h2>Funding Requirements & Use of Funds</h2>
+            <p>Total Requested: <strong>$350,000 USD</strong></p>
+            <table class="funding-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Estimated Cost (USD)</th>
+                        <th>Backend Integration & AI/ML Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Game Dev (Design, AI Models, Testing)</td>
+                        <td>$100,000</td>
+                        <td>Development of AI NPC behavior models, procedural generation algorithms, adaptive systems, and testing of game backend scalability.</td>
+                    </tr>
+                    <tr>
+                        <td>AI/ML Infrastructure & DevOps</td>
+                        <td>$45,000</td>
+                        <td>Cloud resources, MLOps tools, data pipelines, API gateways for serving AI models and managing distributed AI workloads.</td>
+                    </tr>
+                    <tr>
+                        <td>Robotics Kits Manufacturing & Deployment</td>
+                        <td>$40,000</td>
+                        <td>Hardware components with embedded AI capabilities, firmware development, cloud connectivity for remote programming and data collection.</td>
+                    </tr>
+                    <tr>
+                        <td>XR/VR Studio Setup & Equipment</td>
+                        <td>$55,000</td>
+                        <td>Hardware for development and rendering, software licenses, and integration with backend asset management and real-time data streaming services.</td>
+                    </tr>
+                    <tr>
+                        <td>Talent Training & Incubation (200 youths)</td>
+                        <td>$40,000</td>
+                        <td>Curriculum development focusing on AI, ML, CV, Robotics, and development for our specific backend platforms.</td>
+                    </tr>
+                    <tr>
+                        <td>IP Registration & Legal</td>
+                        <td>$10,000</td>
+                        <td>Securing IP for AI algorithms, game assets, and software.</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing, PR, and Platform Launch</td>
+                        <td>$30,000</td>
+                        <td>Promoting our AI-powered products and backend service capabilities.</td>
+                    </tr>
+                    <tr>
+                        <td>Monitoring, Evaluation, and Operations</td>
+                        <td>$30,000</td>
+                        <td>System monitoring tools, operational overhead for backend services, continuous improvement cycles.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$350,000</strong></td>
+                        <td><strong>Focused on building core AI capabilities and robust backend infrastructure.</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>This fund will enable us to build physical infrastructure, develop core digital assets and AI models, conduct targeted training, and deploy our MVP to national and global markets, underpinned by a scalable and secure backend architecture.</p>
+        </section>
+
+        <section id="revenue">
+            <h2>Business Model & Revenue Generation Strategy</h2>
+            <p>Our business model leverages a hybrid of freemium gaming, IP monetization, educational licensing, subscription platforms, direct product sales, and B2B services to create diverse and sustainable revenue streams, all enhanced by intelligent backend systems for optimization and delivery.</p>
+            
+            <h3>Primary Revenue Streams</h3>
+            <div class="revenue-stream">
+                <h4>1. Game Monetization (African Deity Kombat & Future Titles)</h4>
+                <ul>
+                    <li>In-app purchases, downloadable content (DLC), and ad revenue (managed via an ad-serving backend).</li>
+                    <li>Distribution through online game stores (Google Play, Steam, PlayStation Store).</li>
+                    <li>Freemium model offering basic access with premium upgrades, with user tier management on the backend.</li>
+                </ul>
+            </div>
+            <div class="revenue-stream">
+                <h4>2. IP Licensing & Franchising</h4>
+                <ul>
+                    <li>Licensing characters, storylines, themes, and African cultural assets to media platforms, merchandise creators, and third-party developers. Digital rights managed via a secure backend.</li>
+                </ul>
+            </div>
+            <div class="revenue-stream">
+                <h4>3. XR/VR Creative Studio Access & Services</h4>
+                <ul>
+                    <li>Subscription-based access for content creators, educators, schools, and event organizers to our studio facilities and cloud-based XR/VR tools.</li>
+                    <li>Project-based development services for bespoke XR/VR experiences.</li>
+                </ul>
+            </div>
+            <div class="revenue-stream">
+                <h4>4. Robotics & AI Product Sales</h4>
+                <ul>
+                    <li>Sales of educational robotics kits (with companion software and cloud curriculum access).</li>
+                    <li>Licensing of Machine Learning APIs (e.g., CV for agriculture, NLP for local languages) to schools, hobbyists, and tech startups, served from our scalable AI backend.</li>
+                    <li>Developer kits, automation tools, and virtual robotics components/simulations.</li>
+                </ul>
+            </div>
+            <div class="revenue-stream">
+                <h4>5. Workshops, Bootcamps & Certification</h4>
+                <ul>
+                    <li>Paid master classes in AI, Game Development, and Robotics, offered both online (via our learning platform backend) and in-person.</li>
+                    <li>Corporate and institutional training programs, customizable and scalable.</li>
+                </ul>
+            </div>
+
+            <h3>Platform & Service-Based Revenue</h3>
+            <div class="revenue-stream">
+                <h4>6. Subscription Models (SaaS for AI tools)</h4>
+                <ul>
+                    <li>Premium content access through monthly or yearly plans across games, XR tools, and our AI-powered software platforms (e.g., AI content indexing service).</li>
+                </ul>
+            </div>
+            <div class="revenue-stream">
+                <h4>7. Software as a Service (SaaS)</h4>
+                <ul>
+                    <li>Subscription-based access to proprietary AI-powered platforms, tools (e.g., automated CV analysis dashboard), and dashboards for enterprise clients.</li>
+                </ul>
+            </div>
+            <div class="revenue-stream">
+                <h4>8. White-Label Software Licensing</h4>
+                <ul>
+                    <li>Offering customizable AI/software solutions (powered by our core backend modules) for businesses to rebrand and deploy.</li>
+                </ul>
+            </div>
+
+            <h3>Consulting & Custom Solutions</h3>
+            <div class="revenue-stream">
+                <h4>9. AI, ML, and Cybersecurity Consulting</h4>
+                <ul>
+                    <li>Strategic consulting for startups and enterprises in surveillance (AI-enhanced), healthcare (AI diagnostics), and automation sectors.</li>
+                    <li>Development of custom Computer Vision (CV) and AI-based solutions tailored to client needs, integrated with their existing systems or our backend.</li>
+                </ul>
+            </div>
+            <div class="revenue-stream">
+                <h4>10. Custom AI & Software Development</h4>
+                <ul>
+                    <li>Bespoke intelligent solutions for enterprise clients, focusing on efficiency, automation, and innovation, built upon our robust development frameworks and backend expertise.</li>
+                </ul>
+            </div>
+
+            <h3>Supplementary Revenue Streams</h3>
+            <ul>
+                <li><strong>Affiliate Marketing:</strong> Partnering with relevant brands for commission-based promotions.</li>
+                <li><strong>Advertising & Sponsorships:</strong> Monetizing digital platforms via strategic ad placements.</li>
+                <li><strong>E-commerce & Digital Products:</strong> Selling proprietary software, plugins, digital tools, virtual goods.</li>
+                <li><strong>Data Monetization (Anonymized & Aggregated):</strong> Offering insights and analytics, especially in education, gaming, and health, with strong privacy-preserving backend controls.</li>
+                <li><strong>Crowdfunding & Innovation Grants:</strong> Leveraging external funding for specific R&D projects.</li>
+                <li><strong>Blockchain & Crypto Integration:</strong> Exploring token-based economies and DeFi for gaming/creator ecosystems, managed securely on the backend.</li>
+            </ul>
+        </section>
+
+        <section id="impact">
+            <h2>Impact Areas</h2>
+            <p>Our initiatives are designed to create significant and sustainable impact, powered by intelligent systems and a commitment to ethical technology deployment.</p>
+            <div class="impact-area">
+                <h4>Job Creation & Talent Development</h4>
+                <ul>
+                    <li>Training local talent through paid workshops, bootcamps, and certification programs in AI, ML, game development, and robotics. Our training platforms will utilize AI for personalized learning paths.</li>
+                    <li>Hiring for content creation, software development (frontend and backend), AI model engineering, product testing, and platform management, particularly in underrepresented regions.</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>Technological Innovation & Growth</h4>
+                <ul>
+                    <li>Continuous R&D investment in AI, CV, robotics, XR/VR, and blockchain technologies to maintain a competitive edge. Development of novel algorithms and backend architectures.</li>
+                    <li>Developing proprietary software and SaaS platforms (e.g., AI-driven analytics, CV-as-a-Service) for global deployment across diverse sectors.</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>Business Transformation & Digital Enablement</h4>
+                <ul>
+                    <li>Empowering SMEs and enterprises through custom AI solutions, white-label software, and data analytics services delivered via scalable backend APIs.</li>
+                    <li>Supporting digital migration via consulting, training, and automation tools tailored to industry needs (healthcare, security, agriculture, etc.), facilitating integration with modern backend systems.</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>Healthcare Enhancement</h4>
+                <ul>
+                    <li>Building AI-driven medical diagnostics tools (e.g., image analysis for radiology), surveillance tools for public health, and CV applications to improve patient outcomes and hospital efficiency. Secure backend for PHI.</li>
+                    <li>Offering healthtech startup consulting and tailored SaaS solutions for clinical use cases, leveraging our AI and data processing backend capabilities.</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>Agricultural Modernization</h4>
+                <ul>
+                    <li>Providing smart farming solutions through robotics kits, AI-driven analytics (e.g., crop health prediction from drone imagery), and automation tools to optimize crop monitoring and yield prediction. Data ingested and processed via a dedicated Agri-AI backend.</li>
+                    <li>Supporting sustainable agriculture with real-time data processing and remote sensing technologies.</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>Education & Creative Empowerment</h4>
+                <ul>
+                    <li>Launching subscription-based XR/VR creative studios for schools and creators, with cloud-based content management and collaboration backend.</li>
+                    <li>Offering affordable educational robotics kits and access to game development tools (with AI integrations) to foster digital literacy.</li>
+                    <li>Creating inclusive learning platforms and partnerships with institutions to bridge the digital divide, powered by an adaptive learning backend.</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>Economic Empowerment through Digital Commerce</h4>
+                <ul>
+                    <li>Enabling creators and educators to monetize digital products via e-commerce platforms with integrated payment gateways and digital rights management.</li>
+                    <li>Driving financial inclusion through DeFi tools, blockchain integration for transparent transactions, and affiliate marketing partnerships.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="partnerships">
+            <h2>Strategic Partnerships & Ecosystem Development</h2>
+            <p>Slogan Technologies believes in the power of collaboration to accelerate innovation and scale impact. We are actively cultivating and seeking partnerships across various sectors, leveraging a shared vision for technologically advanced and culturally rich solutions. Our backend systems are designed for interoperability to facilitate seamless integration with partners.</p>
+            <div class="partnership-item">
+                <strong>Educational Institutions & STEM Programs:</strong> Collaborating with universities, schools, and coding academies to integrate our AI & Robotics kits into curricula, co-develop educational content leveraging our AI backend for personalized learning, and nurture future talent. We aim to establish "Slogan AI Innovation Labs" within partner institutions.
+            </div>
+            <div class="partnership-item">
+                <strong>Cultural Heritage Organizations & Artists:</strong> Partnering with museums, cultural historians, storytellers, and artists to ensure authenticity and richness in our content, particularly for African Deity Kombat and cultural AI initiatives. Data and asset management will be streamlined through our backend.
+            </div>
+            <div class="partnership-item">
+                <strong>Technology Providers & Cloud Platforms:</strong> Leveraging partnerships with leading AI/ML framework providers (e.g., NVIDIA, Google AI, AWS ML, Microsoft Azure AI) and cloud service providers for cutting-edge tools, optimized inference runtimes, scalable infrastructure, and co-marketing opportunities.
+            </div>
+            <div class="partnership-item">
+                <strong>Game Development Studios & Publishers:</strong> Exploring co-development, distribution, and publishing partnerships to expand the reach of African Deity Kombat and other gaming titles, utilizing shared backend services for analytics and user management where feasible.
+            </div>
+            <div class="partnership-item">
+                <strong>Venture Capital & Impact Investors:</strong> Engaging with investors who share our vision for technology-driven development in Africa and can provide capital, strategic guidance, and access to global networks. Our scalable backend architecture demonstrates readiness for growth.
+            </div>
+            <div class="partnership-item">
+                <strong>Government & NGOs:</strong> Collaborating on initiatives related to digital literacy, job creation, creative economy development, and the ethical deployment of AI, offering our platforms as robust tools for these programs.
+            </div>
+            <div class="partnership-item">
+                <strong>Industry Mentors & Advisory Board:</strong> Actively building an advisory board comprised of seasoned professionals in AI, backend architecture, gaming, robotics, and business development to provide strategic guidance and mentorship. <span class="emphasize">(We are currently in discussion with several potential advisors and welcome further connections from experts in scalable AI systems and creative tech.)</span>
+            </div>
+            <p>Our partnership strategy is integral to our scalability, providing access to resources, expertise, market channels, and fostering a vibrant ecosystem around AI-driven creative technology in Africa. We prioritize partners who value robust, secure, and scalable backend integration capabilities.</p>
+        </section>
+        
+        <section id="appendix" class="appendix">
+            <h2>Appendix: Financial Strategy & Risk Mitigation</h2>
+        
+            <h3>Advanced Monetization Strategies & Backend Leverage</h3>
+            <div class="monetization-item">
+                <p>Beyond primary revenue streams, Slogan Technologies will employ a multi-layered monetization strategy designed for sustainability and growth, critically leveraging our integrated AI/ML backend infrastructure:</p>
+                <ul>
+                    <li><strong>AI-Powered Personalization Engine:</strong> Dynamically tailoring in-game offers (ADK), content recommendations (XR Studio), and learning paths in educational kits (Robotics Kits). This leverages backend analytics, real-time user profiling, and ML model serving for optimized conversion and engagement.</li>
+                    <li><strong>Data-as-a-Service (DaaS) for Cultural & Market Insights:</strong> Offering anonymized and aggregated data from our platforms (with explicit user consent and robust privacy-preserving techniques) as a premium B2B service. Provides valuable insights into cultural engagement, content preferences, and market trends. Secure, ethical data warehousing and analytics managed by our robust backend.</li>
+                    <li><strong>Tokenized Digital Assets & Creator Economy (Blockchain-Integrated):</strong> Exploring blockchain integration for unique in-game assets (ADK), digital art (XR Studio), and creator content. Fosters a vibrant secondary market and empowers creators within our ecosystem, with transactions and ownership managed via a secure, auditable backend ledger.</li>
+                    <li><strong>Enterprise AI Solutions Licensing (AI-as-a-Service):</strong> Packaging specific AI models (e.g., specialized CV for local agriculture, NLP for African languages, anomaly detection for industrial robotics) developed for our products as licensable microservices. Accessible via dedicated, secured API endpoints from our AI backend.</li>
+                    <li><strong>Competitive E-sports Platform for ADK:</strong> Developing infrastructure for African Deity Kombat e-sports tournaments, generating revenue through sponsorships, broadcasting rights, and ticket sales. Backend support for tournament management, matchmaking, and anti-cheat systems.</li>
+                </ul>
+            </div>
+        
+            <h3>Comprehensive Risk Mitigation Plan (Backend Resilience Focus)</h3>
+            <div class="risk-mitigation-item">
+                <p>We acknowledge inherent risks and have proactive strategies, with an emphasis on backend system resilience and scalability:</p>
+                <ul>
+                    <li><strong>Market Adoption Risk:</strong>
+                        <ul>
+                            <li><em>Mitigation:</em> Phased MVP rollout for ADK to gather user feedback via backend analytics. Community-driven development. Culturally relevant content. Continuous A/B testing managed by backend systems.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Technical & Scalability Risks (AI/ML/Game Backend):</strong>
+                        <ul>
+                            <li><em>Mitigation:</em> Modular, microservices-based backend architecture (Docker, Kubernetes). Leveraging multi-cloud strategies for redundancy and cost optimization (AWS, Azure, GCP). CI/CD pipelines, automated testing (unit, integration, load, HIL for robotics). Proactive monitoring and auto-scaling of backend services.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Funding & Financial Runway Risk:</strong>
+                        <ul>
+                            <li><em>Mitigation:</em> Diversified revenue. Phased funding. Lean operations. Strong financial controls. Exploring R&D grants specifically for AI backend development.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Talent Acquisition & Retention (Specialized Backend/AI Engineers):</strong>
+                        <ul>
+                            <li><em>Mitigation:</em> Competitive compensation. Strong tech-focused culture. Continuous learning (certifications in cloud AI, MLOps). Partnerships with tech hubs. Remote options for specialized global talent.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Intellectual Property (IP) Risk (Algorithms, Models, Codebases):</strong>
+                        <ul>
+                            <li><em>Mitigation:</em> Proactive IP registration. Clear IP clauses. Secure development environments (version control, access controls, code scanning). Protection of AI models and backend source code as trade secrets.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Competitive Landscape Risk:</strong>
+                        <ul>
+                            <li><em>Mitigation:</em> Unique value proposition (African culture + advanced AI/XR). Rapid innovation cycle fueled by agile backend development. Strong brand. Strategic partnerships to enhance market position.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Regulatory & Compliance Risk (Data Privacy, AI Ethics):</strong>
+                        <ul>
+                            <li><em>Mitigation:</em> Ongoing monitoring (GDPR, NDPR). Legal counsel. Ethical AI framework embedded in backend design (e.g., data anonymization, bias detection modules). Secure data handling and encryption at rest and in transit.</li>
+                        </ul>
+                    </li>
+                     <li><strong>Cybersecurity & Data Breach Risk:</strong>
+                        <ul>
+                            <li><em>Mitigation:</em> Implementing security best practices (OWASP Top 10) in backend development. Regular penetration testing. AI-driven intrusion detection systems. End-to-end encryption. Robust access control and identity management for all backend services. Disaster recovery and business continuity plans.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion & Call to Action</h2>
+            <p>Slogan Technologies is uniquely positioned to scale its innovations and train the next generation of African digital creators. This proposal directly aligns with CEDF's mission to fund high-impact, scalable, and inclusive creative economy projects. We are not just building products; we are architecting a resilient and intelligent backend ecosystem that will power a new wave of African creativity.</p>
+            <p>We respectfully request your support to access $350,000 in funding to bring this vision to life, beginning <strong>January 2026</strong> under <strong>Phase 1 of the CEDF rollout</strong>.</p>
+            <p class="emphasize">Let's shape the future of Nigeria's creative tech economy - together, by building intelligent systems for a brighter African future.</p>
+        </section>
+
+        <div class="signatures">
+            <div class="signature-block">
+                <p>_________________________</p>
+                <p><strong>Olayiwola Akabashorun</strong></p>
+                <p>Co-Founder / Partner</p>
+                <p>Slogan Technologies, Inc</p>
+            </div>
+            <div class="signature-block">
+                <p>_________________________</p>
+                <p><strong>Aondover Pascal Oryiman</strong></p>
+                <p>Co-Founder</p>
+                <p>Slogan Technologies, Inc</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>© Slogan Technologies LLC. All rights reserved.</p>
+        <p>Powering the Future of Creativity with Intelligent Backend Systems for AI, ML, CV, and Robotics.</p>
+        <p>SLOGAN TECHNOLOGIES LLC</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('nav#navbar a[href^="#"]');
+            const sections = [];
+            navLinks.forEach(link => {
+                const section = document.querySelector(link.getAttribute('href'));
+                if (section) {
+                    sections.push(section);
+                }
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetSection = document.querySelector(this.getAttribute('href'));
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            function updateActiveLink() {
+                let currentSectionId = '';
+                const navBarHeight = document.getElementById('navbar').offsetHeight;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - navBarHeight - 20; // Adjusted offset 
+                    const sectionBottom = sectionTop + section.offsetHeight;
+                    
+                    if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionBottom) {
+                        currentSectionId = section.id;
+                    }
+                });
+                
+                if (!currentSectionId && window.pageYOffset < sections[0].offsetTop - navBarHeight - 20) {
+                     currentSectionId = sections[0].id;
+                } else if (!currentSectionId && window.innerHeight + Math.ceil(window.pageYOffset) >= document.body.offsetHeight -20) { // -20 to catch bottom earlier
+                     currentSectionId = sections[sections.length -1].id;
+                }
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    const parentLi = link.closest('li.has-dropdown');
+                    const parentAnchor = parentLi ? parentLi.querySelector('a') : null;
+                    if (parentAnchor) parentAnchor.classList.remove('active');
+
+                    if (link.getAttribute('href') === `#${currentSectionId}`) {
+                        link.classList.add('active');
+                        if (parentAnchor && !link.closest('ul ul')) { // Only activate parent if it's a direct child link
+                             parentAnchor.classList.add('active');
+                        } else if (link.closest('ul ul') && parentAnchor) { // If it's a sub-menu item, also activate parent
+                            parentAnchor.classList.add('active');
+                        }
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveLink);
+            updateActiveLink(); 
+        });
+    </script>
+</body>
+</html>
