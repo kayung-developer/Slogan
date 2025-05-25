@@ -300,7 +300,7 @@
 <body>
     <header class="main-header">
         <div class="logo-container">
-            <div class="logo-graphic"><img src="https://lh5.googleusercontent.com/2IHfGHXS60vsyQ5nsiVedkXWVs1ZOfmQg8mKdgOd_XLzfRCzzMn3wFDJ4JTKRu3RxqNXaxAvk3bmF1wYFXOwlwg=w16383" width="100px"/></div>
+            <div class="logo-graphic"><img src="https://github.com/kayung-developer/Slogan/blob/main/Slogan%20Tech.png?raw=true" width="100px"/></div>
             <div>
                 
                 <p class="project-title-main">Project Title: Building the Future of African Creativity through AI, Game Development & Robotics</p>
@@ -464,9 +464,9 @@
             <div style="text-align: center; margin-bottom: 15px;">
             <div class="screenshot-placeholder">
 
-            <img src="https://github.com/kayung-developer/African-Diety-Kombat/blob/main/Screenshots/Home.PNG?raw=true" width="250px" height="200px" alt="" />
-            <img src="https://github.com/kayung-developer/African-Diety-Kombat/blob/main/Screenshots/Character%20Selector.PNG?raw=true" width="250px" height="200px" alt="" />
-            <img src="https://github.com/kayung-developer/African-Diety-Kombat/blob/main/Screenshots/Screenshot%20(30).png?raw=true" width="250px" height="200px" alt="" />
+            <img src="https://github.com/kayung-developer/African-Diety-Kombat/blob/main/Screenshots/Home.PNG?raw=true" width="350px" height="200px" alt="" />
+            <img src="https://github.com/kayung-developer/African-Diety-Kombat/blob/main/Screenshots/Character%20Selector.PNG?raw=true" width="350px" height="200px" alt="" />
+            <img src="https://github.com/kayung-developer/African-Diety-Kombat/blob/main/Screenshots/Screenshot%20(30).png?raw=true" width="350px" height="200px" alt="" />
 
             
    
@@ -476,8 +476,37 @@
             <p class="gallery-link" style="text-align: center;"><em>More images can be found in our <a href="https://drive.google.com/drive/folders/14LbI4JV0YPvAj1gOJB6yd3krwA8RAtUv?usp=sharing" target="_blank" rel="noopener noreferrer">Gallery</a>.</em></p>
         
             <h4>Gameplay Video Preview</h4>
+
+            
             <div class="video-placeholder">
                 <p><strong>ADK Gameplay Trailer/Concept Video</strong></p>
+               
+            <iframe src="https://drive.google.com/file/d/1V9i5Mrgsk5ieH5xWRH_Ge7bndA6ctib5/preview" width="500" height="300" allow="autoplay"></iframe>
+
+            <canvas id="canvasElement" width="540" height="300"></canvas>
+
+            <script>
+             const video = document.getElementById('videoElement');
+                const canvas = document.getElementById('canvasElement');
+                    const ctx = canvas.getContext('2d');
+
+            // Function to draw video frames onto canvas
+            function drawFrame() {
+          if (!video.paused && !video.ended) {
+              ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+              requestAnimationFrame(drawFrame);  // 60fps
+                    }
+            }
+
+            // Start drawing frames when video is playing
+            video.addEventListener('play', () => {
+               drawFrame();
+            });
+
+        </script>
+
+
+
                 <p>🎥 <a href="https://drive.google.com/file/d/1V9i5Mrgsk5ieH5xWRH_Ge7bndA6ctib5/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Watch the Gameplay Video</a></p>
                 <p>This preview will demonstrate the fluid combat, AI-driven character interactions, robotics-inspired physics, and the rich visual tapestry inspired by African mythology.</p>
             </div>
@@ -834,20 +863,7 @@
             <p class="emphasize">Let's shape the future of Nigeria's creative tech economy - together, by building intelligent systems for a brighter African future.</p>
         </section>
 
-        <div class="signatures">
-            <div class="signature-block">
-                <p>_________________________</p>
-                <p><strong>Olayiwola Akabashorun</strong></p>
-                <p>Co-Founder / Partner</p>
-                <p>Slogan Technologies, Inc</p>
-            </div>
-            <div class="signature-block">
-                <p>_________________________</p>
-                <p><strong>Aondover Pascal Oryiman</strong></p>
-                <p>Co-Founder</p>
-                <p>Slogan Technologies, Inc</p>
-            </div>
-        </div>
+        
     </div>
 
     <footer class="main-footer">
